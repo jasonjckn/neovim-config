@@ -5,13 +5,13 @@ return {
     ft = "lua",
     dependencies = {
       { "justinsgithub/wezterm-types", lazy = true },
-      { "Bilal2453/luvit-meta", lazy = true },
+      { "Bilal2453/luvit-meta",        lazy = true },
     },
     opts = {
       library = {
         "lazy.nvim",
         { path = "luvit-meta/library", words = { "vim%.uv" } },
-        { path = "wezterm-types", mods = { "wezterm" } },
+        { path = "wezterm-types",      mods = { "wezterm" } },
       },
     },
   },
@@ -120,7 +120,7 @@ return {
           local ensure_installed = {
             "bashls",
             "clangd",
-            "cmake",
+            -- "cmake",
             "jsonls",
             "lua_ls",
             "marksman",
@@ -129,8 +129,8 @@ return {
             "tinymist",
             "ruff",
             "bashls",
-            "cmake",
-            "fennel_ls",
+            -- "cmake",
+            -- "fennel_ls",
             "jsonls",
             "ts_ls",
             -- "fennel_ls",
@@ -142,6 +142,8 @@ return {
             -- "isort",
             -- "jq",
             -- "json-lsp",
+            "lua_ls",
+            "clojure_lsp",
             -- "julials",
             -- "markdownlint",
             -- "prettier",
@@ -357,7 +359,7 @@ return {
           })
 
           require("conform").formatters.shfmt =
-            { prepend_args = { "--indent", "4", "--case-indent", "--space-redirects", "--simplify" } }
+          { prepend_args = { "--indent", "4", "--case-indent", "--space-redirects", "--simplify" } }
         end,
       },
       {
@@ -371,7 +373,7 @@ return {
       },
 
       -- project local configuration
-      { "folke/neoconf.nvim", cmd = "Neoconf" },
+      { "folke/neoconf.nvim",      cmd = "Neoconf" },
     },
   },
 }
