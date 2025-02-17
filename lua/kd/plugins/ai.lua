@@ -1,5 +1,6 @@
 return {
   {
+    "hrsh7th/nvim-cmp",
     "zbirenbaum/copilot.lua",
     cmd = "Copilot",
     config = function()
