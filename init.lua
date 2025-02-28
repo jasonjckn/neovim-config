@@ -15,7 +15,7 @@ bootstrap("folke/lazy.nvim")
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-vim.g.neovide_cursor_animation_length = 0.05
+vim.g.neovide_cursor_animation_length = 0.03
 
 
 require("lazy").setup({
