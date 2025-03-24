@@ -3,5 +3,5 @@
 ### Setup
 
 ```
-git clone git@github.com:kdheepak/nvim.git ~/.config/nvim && nvim
+git clone git@github.com:jasonjckn/neovim-config.git ~/.config/nvim && nvim
 ```
