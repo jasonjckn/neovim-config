@@ -35,4 +35,4 @@ require("kd.highlights")
 require("kd.options")
 require("kd.autocmds")
 
-vim.o.guifont = "Tensora Mono N:h13"
+vim.o.guifont = "Tensora Mono N:h14"
