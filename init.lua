@@ -22,7 +22,7 @@ require("lazy").setup({
   spec = { { import = "kd/plugins" } },
   install = {
     -- try to load one of these colorschemes when starting an installation during startup
-    colorscheme = { "rose-pine" },
+    colorscheme = { "e-ink" },
   },
   change_detection = {
     enabled = true,

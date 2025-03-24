@@ -9,7 +9,7 @@ return {
   --   "rose-pine/neovim",
   --   name = "rose-pine",
   --   config = function()
-  --     require("rose-pine").setup({
+  --       require("rose-pine").setup({
   --       styles = {
   --         bold = true,
   --         italic = false,
@@ -19,22 +19,39 @@ return {
   --         Comment = { italic = true },
   --         ["@markup.italic"] = { italic = true },
   --       },
-  --     })
-  --     -- load the colorscheme here
-  --     vim.cmd.colorscheme("rose-pine")
+  --       })
+  --       -- load the colorscheme here
+  --       vim.cmd.colorscheme("rose-pine")
   --   end,
   -- },
   {
-    "projekt0n/github-nvim-theme",
-    name = "github-theme",
-    lazy = false, -- make sure we load this during startup if it is your main colorscheme
-    priority = 1000, -- make sure to load this before all the other start plugins
-    config = function()
-      require("github-theme").setup({
-        -- ...
-      })
+    "alexxGmZ/e-ink.nvim",
+    name = "e-pink",
+    priority = 1000,
+    config = function ()
+        require("e-ink").setup()
+        vim.cmd.colorscheme "e-ink"
 
-      vim.cmd("colorscheme github_light_tritanopia")
-    end,
+        -- choose light mode or dark mode
+        -- vim.opt.background = "dark"
+        vim.opt.background = "light"
+        --
+        -- or do
+        -- :set background=dark
+        -- :set background=light
+    end
   },
+  -- {
+  --   "projekt0n/github-nvim-theme",
+  --   name = "github-theme",
+  --   lazy = false, -- make sure we load this during startup if it is your main colorscheme
+  --   priority = 1000, -- make sure to load this before all the other start plugins
+  --   config = function()
+  --     require("github-theme").setup({
+  --       -- ...
+  --     })
+
+  --     vim.cmd("colorscheme github_light_tritanopia")
+  --   end,
+  -- },
 }
